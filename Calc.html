@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <script>
+        function calc1(){
+            var num1 = parseInt(document.getElementById("val1").value);
+            var num2 = parseInt(document.getElementById("val2").value);
+            document.getElementById('result').innerHTML=num1+num2;
+        }
+        function calc2(){
+            var num1 = parseInt(document.getElementById("val1").value);
+            var num2 = parseInt(document.getElementById("val2").value);
+            document.getElementById("result").innerHTML=num1-num2;
+        }
+        function calc3(){
+            var num1 = parseInt(document.getElementById("val1").value);
+            var num2 = parseInt(document.getElementById("val2").value);
+            document.getElementById("result").innerHTML=num1*num2;
+        }
+        function calc4(){
+            var num1 = parseInt(document.getElementById("val1").value);
+            var num2 = parseInt(document.getElementById("val2").value);
+            document.getElementById("result").innerHTML=num1/num2;
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <input type="text" placeholder="Enter First Number" id="val1"><br><br>
+        <input type="text" placeholder="Enter Second Number" id="val2"><br><br>
+        <input type="button" onclick="calc1()" value="Plus">
+        <input type="button" onclick="calc2()" value="Minus">
+        <input type="button" onclick="calc3()" value="Miltiply">
+        <input type="button" onclick="calc4()" value="Divide"><br><br>
+        <Span id="result"></Span>
+    </form>
+    
+</body>
+</html>
